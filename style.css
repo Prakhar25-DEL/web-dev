@@ -1,0 +1,136 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  width: 850px;
+  height: 500px;
+  background: #fff;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+/* Left Orange/Black Panel */
+.info-panel {
+  width: 50%;
+  background: linear-gradient(135deg, #ff7b00, #111);
+  color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-panel h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.info-panel p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Right Side Form */
+.form-box {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-box h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-box {
+  position: relative;
+  margin: 20px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  font-size: 0.85rem;
+  color: #ff7b00;
+}
+
+/* Login Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ff7b00;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e56f00;
+}
+
+/* Signup Link */
+.form-box p {
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+.form-box a {
+  color: #ff7b00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
